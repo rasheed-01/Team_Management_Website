@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroBanner from '../components/HeroBanner';
 import UseWindowSize from '/components/facilities/windowSize';
 import Image from 'next/image';
 import Layout from '../components/layout/layout';
@@ -19,7 +18,7 @@ const md = 1024;
       <div>
             <div className="scroll">
               <h1 className='title2'> My Dashboard </h1>
-              <HeroBanner />
+              
             </div>
       </div>
       </Layout>
