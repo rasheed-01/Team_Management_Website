@@ -1,8 +1,6 @@
 import React from 'react';
 import HeroBanner from '../components/HeroBanner';
 import UseWindowSize from '/components/facilities/windowSize';
-import TaskBox from '../components/dashboard/TaskBox';
-import ProjectCard1 from '../components/dashboard/projectCard1';
 import Image from 'next/image';
 import Layout from '../components/layout/layout';
 
