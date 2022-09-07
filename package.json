@@ -1,0 +1,50 @@
+{
+  "name": "oxa-web",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@material/typography": "^14.0.0",
+    "@mui/lab": "^5.0.0-alpha.92",
+    "@mui/material": "^5.8.6",
+    "@mui/x-date-pickers": "^5.0.0-beta.2",
+    "@reduxjs/toolkit": "^1.8.3",
+    "bootstrap": "^5.1.3",
+    "date-fns": "^2.29.1",
+    "material-ui-popup-state": "^4.0.1",
+    "moment": "^2.29.4",
+    "next": "^12.2.5",
+    "next-images": "^1.8.4",
+    "react": "^18.2.0",
+    "react-calendar": "^3.7.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.33.1",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  },
+  "browser": {
+    "crypto": false,
+    "fs": false,
+    "path": false,
+    "os": false,
+    "net": false,
+    "stream": false,
+    "tls": false
+  }
+}

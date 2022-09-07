@@ -1,0 +1,1630 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  padding: 2rem;
+  font-family: Jost-Medium;
+ font-size: 24px; 
+}
+*{
+  box-sizing: border-box;
+}
+
+.col-1 {width: 25%;}
+.col-2 {width: 25%;}
+.col-3 {width: 25%;}
+.col-4 {width: 25%;}
+
+.row{
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left : 25px;
+}
+.row2{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+  color: #14487c;
+  margin-left: 100 px;
+
+}
+
+.layout {
+  padding: 10px;
+}
+
+/*
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  width: 60%;
+  margin-bottom: 20px;
+
+}
+*/
+/*
+.product-card:hover{
+  transform: scale(1.1,1.1)
+  
+}
+*/
+
+.test{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.product-name {
+  font-weight: 500;
+}
+
+.product-price {
+  font-weight: 800;
+  margin-top: 6px;
+  color: black;
+}
+
+.hero-banner-container{
+  padding: 0px 40px;
+  background-color:white;
+  border-radius: 15px;
+  position: center;
+  height: 193px;
+  line-height: 0.9;
+  width: 98%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.title2{
+  padding-top: 20px;
+  font-weight: 350;
+  
+}
+
+.task-container{
+  flex-wrap: wrap;
+  display: flex;
+  justify-items: center;
+  gap: 40px;
+}
+
+.deadline-container{
+  padding: 10px 10px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  background-color:#F0F4F6;
+  border-radius: 8px;
+  position: center;
+  text-align: center;
+  height: 40px;
+  line-height: 0.9; 
+  width: 15%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  
+}
+
+.Headers{
+  padding-top: 2px;
+  padding-bottom: 5px;
+  
+  
+}
+.T-Heading1{
+padding-left: 190px;
+}
+.T-Heading2{
+  padding-left: 240px;
+}
+.T-Heading3{
+  padding-left: 135px;
+}
+.T-Heading4{
+  padding-left: 50px;
+}
+
+
+.project-container{
+  padding: 10px 40px;
+  background-color:white;
+  border-radius: 15px;
+  transform: scale(1, 1);
+  text-align: left;
+  height: 190px;
+  line-height: 0.9; 
+  width: 97%;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.T-Heading{
+  color:  #013220;
+  font-style:Bold;
+  padding-left: 0px;
+  text-align: center;
+}
+.project-container:hover{
+  transform: scale(1.1,1.1)
+}
+.Members-pics{
+  /* margin-right: 405px; */
+  height: 45px;
+  width: 45px;
+  padding-bottom: 5px;
+}
+
+.hero-container{
+  margin-bottom: 200px;
+  padding-left: 14px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:20px;
+}
+
+.invisible {
+  color: white;
+}
+
+.bannerimg-container {
+  justify-content:right;
+  padding-left: 100px;
+}
+
+.Taskbox-container{
+  padding-bottom: 15px;
+}
+
+.status-container{
+  padding: 10px 10px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  background-color:#6ECF2F;
+  border-radius: 8px;
+  position: center;
+  text-align: center;
+  height: 40px;
+  line-height: 0.9; 
+  width: 8%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  color: #ebebeb;
+}
+.Date{
+  font-weight: 250;
+}
+
+.status-container1{
+  padding: 10px 10px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  background-color:#2182D4;
+  border-radius: 8px;
+  position: center;
+  text-align: center;
+  height: 40px;
+  line-height: 0.9; 
+  width: 8%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  color: #ebebeb;
+}
+
+.bannerimage {
+  height: 100px;
+  width: 100px;
+  justify-content: right;
+
+}
+.title{
+  padding-top: 40px;
+  font-weight: 350;
+  font-size:xx-large;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #414141;
+  text-shadow: 0 0 0.5px #707070;
+  
+}
+
+.sub-heading {
+  padding-top: 25px;
+  font-weight: 200;
+  font-size: x-large;
+  align-content: flex-start;
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.hero-banner-container h1 {
+  color: rgb(10, 10, 10);
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: -20px;
+  text-align: left;
+
+}
+
+.hero-banner-image {
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  width: 450px;
+  height: 450px;
+}
+
+.product-container{
+ margin-top: 15px;
+overflow: auto;
+max-height: 70vh;
+padding: 20px 10px;
+}
+
+.small-container{
+  padding: 10px 10px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  background-color:#F0F4F6;
+  border-radius: 8px;
+  position: center;
+  text-align: left;
+  height: 40px;
+  line-height: 0.9; 
+  width: 50%;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+.Project-heading-container
+{
+  flex: wrap;
+  display: flex;
+  gap:0px
+}
+.members{
+  height: 40px;
+  width: 50px;
+  margin-top: 5px;
+}
+.heading-container{
+  color: #858997;
+  text-decoration: underline;
+  text-shadow: 0 0 0 0px #707070;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+}
+
+.small-container:hover{
+  transform: scale(1.1,1.1)
+}
+
+.back-image{
+  
+  width: '88%';
+  height: '800px';
+}
+
+
+@media screen and (max-width:800px) {
+  .hero-banner-container {
+    height: 560px;
+  }
+
+  .hero-banner-image {
+    width: 77%;
+    height: 62%;
+    top: -2%;
+    right: -6%;
+  }
+
+  .footer-banner-container {
+    height: 560px;
+    margin-top: 80px;
+  }
+
+  .footer-banner-image {
+    width: 77%;
+    left: 30%;
+    top: 6%;
+    height: 56%
+  }
+
+  .banner-desc .left h3 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 5px;
+  }
+
+  .hero-banner-container{
+    line-height: 1.3;
+  }
+
+  .hero-banner-container h1 {
+    font-size: 50px;
+  }
+
+  .hero-banner-container h3 {
+    font-size: 40px;
+  }
+
+  .hero-banner-container button {
+    margin-top: 90px;
+    z-index: 10000;
+  }
+
+  .desc {
+    bottom: 60px;
+  }
+
+  .product-detail-container {
+    flex-wrap: wrap;
+  }
+
+  .product-detail-container .product-detail-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .cart-container {
+    width: 415px;
+    padding: 4px;
+  }
+
+  .cart-heading {
+    margin-top: 35px;
+  }
+
+  .product-container {
+    margin-top: 10px;
+  }
+
+  .product {
+    padding: 20px 5px;
+
+  }
+ 
+.heading{
+  padding-left: 20px;
+  flex-wrap: wrap;
+  justify-content: right;
+
+}
+
+}
+/*
+@Mohammed
+m_NOTE: 
+m_NOTE:
+new dashboard components
+*/
+.welcome-dashboard{
+  height: 225px;
+  width: 100%;
+  display:flex;
+  align-items: flex-end;
+  
+}
+.welcome-dashboard-div{
+  bottom: 0;
+  min-height: 177px;
+  width: 100%;
+  border-radius: 32px;
+  background:#FEFEFE;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index:0
+}
+.welcome-dashboard-message-container{
+  border-bottom-left-radius: 32px;
+  border-top-left-radius: 32px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+
+}
+.welcome-dashboard-message{
+  border-bottom-left-radius: 32px;
+  border-top-left-radius: 32px;
+  max-width:376px;
+  padding: 15px;
+  
+}
+.welcome-dashboard-text{
+  color: #414141;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight:500;
+
+}
+.welcome-dashboard-pragraph{
+  font-family: Myriad Pro;
+  font-size: 23px;
+  
+}
+
+/*this style for forcing the image be out side the border of div*/
+span{
+  overflow: visible !important;
+}
+
+
+.overflow-img{
+  min-height: 130% !important;
+  position: relative !important;
+  top:-45px !important;
+  bottom:0px !important;
+  right:0px;
+  left:0px;
+  transition:  .7s; 
+}
+
+
+.card-content-align-items{
+  display: grid;
+  align-items: center;
+    justify-items: stretch;
+}
+
+.cards-div{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 12px;
+transform: scale(1, 1);
+transition: transform 0.5s ease;
+color: #324d67;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 20px;
+width: 100%;
+height:100%;
+max-width: 172.72px;
+min-height: 152px;
+max-height: 152.22px;
+min-width: 135px;
+
+}
+/* this for styling the title of the card*/
+.css-nrdprl-MuiTypography-root {
+  width: 72px;
+}
+
+.card-num{
+  font-family: Roboto;
+  font-weight:bold;
+  font-size:50px;
+  color:rgb(0, 0, 0);
+}
+
+.card-conten{
+padding:1px 1px ;
+}
+/*this force custom padding the content of card*/
+.css-1r6ds8p-MuiCardContent-root:last-child{
+  padding-bottom: 1px;
+}
+.css-132jkia-MuiCardContent-root:last-child{
+  padding-bottom:12px
+}
+
+
+/*this for the project square card option*/
+.project-square-card-projects-div{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 10px 0px 10px;
+}
+
+.project-square-card-create-btn{
+  color:#858997;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+}
+.project-square-card-create-btn:hover{
+  color:rgb(249, 245, 245);
+  background:rgb(91, 124, 187, .8);
+}
+
+/*m_NOTE: @Mohammed 
+style of project card components*/
+.project-dashboard-div{
+  bottom: 0;
+  margin-bottom: 40px;
+  padding: 15px 15px 15px;
+  min-height: 216px;
+  width: 100%;
+  border-radius: 32px;
+  background:#FEFEFE;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index:0
+}
+
+.project-banner-header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size:24px;
+  color:#858997;
+  width: 100%;
+  height: 40px;
+}
+
+.project-banner-title{
+  display: flex;
+}
+.project-banner-title-text{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 21px;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+.project-banner-header-avatars{
+  border: none !important;
+  box-shadow: rgba(100, 100, 111, 0.5) 3px 5px 7px 3px;
+  
+}
+
+.project-banner-header-btn{
+  display:flex;
+  align-items:center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+}
+
+.project-banner-header-save-btn-hover:hover{
+  color:rgb(249, 245, 245);
+  background:rgb(91, 124, 187, .8);
+}
+.project-banner-header-delete-btn-hover:hover{
+  color:rgb(249, 245, 245);
+  background:rgba(237, 12, 12, 0.8);
+}
+
+.project-banner-header-delete-dialog-btns{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.project-banner-header-save-btn{
+  color:rgb(249, 245, 245);
+  background:rgb(91, 124, 187, .4);
+}
+.project-banner-header-delete-btn{
+  color:rgb(249, 245, 245);
+  background:rgba(237, 12, 12, 0.4);
+}
+
+.project-banner-content{
+ display: grid;
+ justify-items: center;
+ padding-top:20px;
+ color:#858997;
+}
+
+.project-banner-content-task-row{
+  margin-top: 5px;
+}
+.project-banner-task-field{
+  margin-top:0px !important;
+  width: 100% !important;
+  height: 43px !important;
+  border-radius: 4px !important;
+  background:#F0F4F6 !important;
+  padding: 0px 0px !important;
+}
+
+.css-1gctnaj-MuiInputBase-input-MuiFilledInput-input{
+  padding-top: 5px;
+  background: #F0F4F6;
+  width: 100%;
+  color: #000 !important;
+}
+
+
+.project-banner-task-field-input{
+  margin-top:0px !important;
+  width: 100% !important;
+  height: 43px !important;
+  border-radius: 4px !important;
+  background:#F0F4F6 !important;
+  color: #000 !important;
+  padding: 0px 0px !important;
+  padding-left: 10px !important;
+  border: none !important;
+}
+.project-banner-task-field-input::after:hover{
+  border: none !important;
+}
+.project-banner-content-delete-task-icon{
+  transform: rotate(180deg);
+}
+
+.project-banner-content-status-button{
+  color: white;
+  background:#6ECF2F;
+  width:100%;
+  height:43px;
+  border-radius: 4px;
+}
+/*task status*/
+.arrow-box-status{
+  margin-top: .2rem;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+	position: relative;
+	background: rgb(91, 124, 187, .8);
+	border: 1px solid rgb(91, 124, 187, .8);
+  border-radius:15px;
+  color: rgb(255, 255, 255, .9);
+  height:190px;
+  max-width: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 0;
+}
+.status-style{
+  align-items: center;
+  
+}
+
+.status-arrow{
+  text-align: center
+}
+.ONP{
+  background:#2182D4;
+}
+.FIN{
+  background:#6ECF2F;
+}
+.ERROR{
+  background:#f10505;
+}
+.WAIT{
+  background:#808080;
+}
+.MIS{
+  background:#b4594d;
+}
+/* m_NOTE: these two styles beloow for the tooltip*/
+.MuiTooltip-tooltipPlacementBottom{
+  margin-top:0px !important;
+  font-size: 13px;
+  background:rgb(91, 124, 187, 1);
+  border-radius: 7px;
+
+}
+.MuiTooltip-arrow{
+  color:rgb(91, 124, 187, .8);
+}
+
+.code-box{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:84px !important;
+  text-align: center;
+}
+
+
+.project-banner-content-column-alignment{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.project-banner-deadline-field{
+  display: flex !important;
+  align-items:flex-end !important;
+  font-family: Montserrat !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  width: 100% !important;
+  height:43px !important;
+  border-radius: 4px !important;
+  background:#F0F4F6 !important;
+  padding: 0px !important;
+  text-align: center;
+  padding-left: 10px;
+  
+}
+
+/*
+* m_NOTE: this for fixing the background of calendar icon when updating tasks
+*/
+.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root{
+  background:#F0F4F6 !important;
+}
+
+
+
+
+/* @Mohammed
+this style for the layout*/
+/*this for make the div scrollable (main body)*/
+
+div.scroll {
+  top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  width: 100%;
+  height:100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  bottom: 40px;
+  z-index: 0;
+}
+
+.nav-bar-btns-margin {
+  margin-top: 3rem;
+}
+
+/* the nav side bar (left section)*/
+.side {
+  top: 0px;
+  padding-top: 2rem;
+  z-index: 2;
+}
+
+.side-button {
+  width: 100%;
+  position: relative;
+
+}
+
+.side-button:after {
+  border-radius: 50px;
+  content: '';
+  width: .2rem;
+  background: #3a86ff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(40%);
+}
+
+/*this for make the multi lines*/
+.display-linebreak {
+  white-space: pre-line;
+  font-size: large;
+}
+
+
+/*sizing icons in the nav bar*/
+.react-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.home-icon {
+  width: 25px;
+  height: 25px;
+}
+
+
+
+/*the hieght of the nav bar for sm */
+.dcrease-hieght:after {
+  height: 150px;
+}
+
+/* right side section*/
+.side-right {
+  background: #f8f9fa;
+  top: 0px;
+  /* Header Height */
+  /*bottom: 40px;*/
+  margin-bottom: 1px;
+  /* Footer Height */
+  width: 100%;
+  right: 0;
+  z-index: 1;
+
+}
+
+/* footer bar
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+*/
+
+/* OXA logo*/
+.logo {
+  width: 100%;
+  padding-left: 10px;
+  margin: 0rem 0rem 0rem 0rem;
+
+}
+button{
+  background: none;
+  background-color: none;
+}
+
+
+/* @Mohammed
+end of the layout */
+
+
+/* @Mohammed 
+styling for the calendar*/
+
+/*this for the clendar container */
+.div-clendar{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.react-calendar {
+  max-width: 550px;
+  width: 100%;
+  background: #f8f9fa;
+  border-color: #f8f9fa;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+/*this color for adding random color for a task on the*/
+.red{
+  
+  background: rgba(220, 61, 33, .2);
+}
+.pink{
+  background: rgba(236, 77, 191, 0.5);
+}
+.blue{
+  background: rgba(155, 228, 218, 0.5);
+}
+.green{
+  background: rgba(84, 191, 96, 0.5);
+  
+}
+.yellow{
+  background: rgba(223, 236, 79, 0.5);
+}
+.purple{
+  background: rgba(191, 116, 236, 0.5);
+}
+.orange{
+  background: rgba(222, 140, 39, 0.5);
+}
+
+/*these thre style below for edit the shape of marked task on the calendar*/
+.oneDate{
+  border-radius: 10rem;
+}
+.endDate{
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  
+}
+.startDate{
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+}
+
+/*this the square part for view days  of the calendar*/
+.react-calendar__viewContainer {
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  min-width: 20px;
+  font-size: 20px;
+
+}
+
+
+button.react-calendar__navigation__next-button {
+  background: #5b7cbb;
+  color: white;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  padding-bottom: .5rem;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  align-items: center;
+  align-self: center;
+}
+
+button.react-calendar__navigation__next-button:hover::after {
+  background: white;
+  color: #5b7cbb;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  padding-bottom: .5rem;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  align-items: center;
+  align-self: center;
+}
+
+
+button.react-calendar__navigation__prev-button {
+  background-color: #5b7dbb;
+  color: white;
+  border-radius: 10rem;
+  margin-left: 1rem;
+  padding-bottom: .5rem;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.react-calendar__navigation__label {
+  color: #5b7dbb;
+  background: #f8f9fa;
+}
+.react-calendar__navigation__label:hover{
+  border-radius: 10rem;
+  
+}
+
+.react-calendar__navigation__arrow:hover,
+.react-calendar__navigation__arrow:focus {
+  color: #5b7dbb;
+  background: #f8f9fa;
+}
+/*end of styling the navigation buttons of the calendar*/
+
+/*this style for the name fo day (M T W T F S S)*/
+.react-calendar__month-view__weekdays{
+  color: #7889A0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+/*these three below styles respectively align the years and months and the days of the calendar*/
+.react-calendar__tile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.react-calendar__year-view__months__month{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.react-calendar__month-view__days__day{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center; 
+}
+/*the color of weekend days*/
+.react-calendar__month-view__days__day--weekend {
+  color: #000000;
+}
+
+/*the color of next/prev month days*/
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+/* this for add spacing between days*/
+.react-calendar button{
+  margin-bottom: .7rem;
+
+}
+.react-calendar__year-view__months__month{
+background: none;
+
+}
+.react-calendar__tile{
+  height: 30px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: rgb(63, 142, 253, .5);
+  color: black;
+  height: 30px;
+}
+
+.react-calendar__tile--now {
+  font-weight: bold;
+  color: rgb(240, 7, 7);
+}
+
+.react-calendar__tile--active {
+  background:rgb(63, 142, 253, .5);
+  font-weight: bold;
+  color: black;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: rgb(63, 142, 253, .5);
+  color: black;
+  font-weight: bold;
+}
+
+/*these styles for the popup window on the calnder*/
+.bold{
+  margin-bottom:15px;
+  font-weight: bold;
+}
+
+
+
+.calendar-popup{ 
+  color: rgb(255, 255, 255, .9);
+  }
+
+.arrow-box {
+  margin-top: .2rem;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+	position: relative;
+	background: rgb(91, 124, 187, .8);
+	border: 1px solid rgb(91, 124, 187, .8);
+  border-radius:15px;
+  color: rgb(255, 255, 255, .9);
+  height:190px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 0;
+}
+
+.break-to-center{
+  display: flex;
+  justify-content: center;
+}
+.divider{
+  display: flex;
+  align-items: center;
+  width:50%;
+  margin-top:15px;
+  margin-bottom:15px;
+  border-color: white;
+  
+}
+
+.divider-taller{
+  display: flex;
+  align-items: center;
+  width:80%;
+  margin-top:15px;
+  margin-bottom:15px;
+  border-color: white;
+  
+}
+
+
+
+/*@Mohammed right_side_part Notes section*/
+.rightside-arrow-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.note-icon-box {
+  background: #d1e9ff;
+  color: #3a86ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-icon {
+  width: 20px;
+  height: 20px;
+  justify-items: center;
+}
+
+div.toCenter {
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.text-color-notes {
+  color: black;
+  width: 100%;
+}
+
+.notes-list {
+  margin-top: 1rem;
+
+}
+
+.text-notes {
+  padding-left: .5rem;
+}
+
+
+.notes-margin {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-left: 32px;
+  
+  margin-bottom: 32px;
+}
+
+.toLeft {
+
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.toLeft:hover {
+  color: black;
+}
+
+.toRight {
+  color: #adb2bd;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.toRight:hover {
+  color: black;
+}
+
+
+/*@Mohammed register*/
+
+.register-div{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  justify-content: center;
+}
+
+.register-welcome-text{
+  color: #FFFFFF;
+  font-size: 30px;
+
+}
+
+.register-journey-text{
+font-size: 20px;
+}
+
+
+/* register form*/
+
+div.register-text-div{
+  max-width: 514px;
+}
+
+form.log-reg {
+  width: 514px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center; 
+  
+}
+
+.log-reg-label {
+  width: 80%;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.log-reg-input {
+  outline:none;
+  width: 60%;
+  font-size: 15px;
+  color: #797878;
+  padding: 0.5rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+.log-reg-input:hover{
+  transform: scale(1.1);
+  padding: none;
+  margin-left: 1rem;
+}
+
+.log-reg-input:focus{
+  transform: scale(1.4);
+  padding: none;
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+.register-input-container{
+  display: flex;
+  flex-direction: column;
+  min-width: 514px;
+  min-height: 96px;
+  margin-top: 1rem;
+  padding-top: 1rem ;
+  padding-left: 3rem;
+  padding-bottom: .5rem;
+  border-radius: 22px;
+  width: 100%;
+  background: #FFFFFF;
+  opacity: 67%;
+}
+
+.register-button{
+  margin-top: 1rem;
+  background: #6B709D;
+  color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 30px;
+  width: 219px;
+  height: 62px;
+  transition: all .5s ease-in-out;
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.register-button:hover{
+  transform: scale(1.2);
+}
+
+.register-buttons-toCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.login-button{
+  margin-top: 1rem;
+  background: #E5A2AB;
+  opacity: 69%;
+  color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 30px;
+  width: 219px;
+  height: 62px;
+  transition: all .5s ease-in-out;
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button:hover{
+  transform: scale(1.2);
+}
+
+.show-password-button{
+  margin-right: 3rem;
+}
+
+/*@Mohammed login page*/
+
+.slogin-button-opa{
+  opacity: 100%;
+  background: #C48482;
+}
+
+.register-text{
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 2rem;
+
+}
+
+.register-text-link{
+  text-decoration: underline;
+  transition: all .5s ease-in-out;
+}
+
+.register-text-link:hover{
+  transform: scale(1.2);
+  padding-left: 1rem;
+}
+
+
+
+/* m_NOTE: @Mohammed  adding new task style
+
+*/
+
+.check-box{
+  display:flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.check-box-text{
+  display:flex;
+  height: 42px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+/*this style for the dialog sheet */
+.css-tlc64q-MuiPaper-root-MuiDialog-paper{
+border-radius: 25px;
+}
+
+.newTaskField{
+  border: none;
+  background-color: #F6F6F6;
+  border-radius: 22px;
+}
+
+#name-label{
+  border: none;
+  border-radius: 22px;
+}
+
+#name-label:focus{
+  border: none;
+  border-radius: 22px;
+}
+
+
+.add-task-to-center{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.full-width{
+  width: 100%;
+}
+
+form.new-task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center; 
+  align-items: center;
+  
+}
+
+.new-task-label {
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.new-task-input {
+  outline:none;
+  padding-left: 16.5px !important;
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  color: #000000;
+  padding: 0.5rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+
+.inner-shadow {
+  -moz-box-shadow:     inset 0 0 25px  rgba(0, 0, 0, 0.16);
+   -webkit-box-shadow: inset 0 0 25px  rgb(0, 0, 0, .16);
+   box-shadow:         inset 0 0 25px  rgb(0, 0, 0, .16);
+}
+
+.new-tasks-button-unvalid{
+  display: flex;
+  margin-top: 1rem;
+  background: rgb(196, 132, 130, .2);
+  color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 30px;
+  width: 219px;
+  height: 62px;
+  transition: all .5s ease-in-out;
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-tasks-button{
+  display: flex;
+  margin-top: 1rem;
+  background: #C48482;
+  color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 30px;
+  width: 219px;
+  height: 62px;
+  transition: all .5s ease-in-out;
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-tasks-button:hover{
+  transform: scale(1.1);
+}
+
+
+/*new task date picker*/
+/*this style for the label of the date picker*/
+
+/*title filed*/
+
+
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+  outline:none;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: #000000;
+  background: #F6F6F6;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  -moz-box-shadow:     inset 0 0 25px  rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 25px  rgb(0, 0, 0, .16);
+  box-shadow:         inset 0 0 25px  rgb(0, 0, 0, .16);
+}
+
+
+/*date picker*/
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 20px;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+  outline:none;
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  color: #797878;
+  border: 1px solid #FFFFFF;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  outline:none;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: #000000;
+  background: #F6F6F6;
+  padding: 0.5rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 22px;
+  box-sizing: border-box;
+  transition: all .5s ease-in-out;
+  -moz-box-shadow:     inset 0 0 25px  rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: inset 0 0 25px  rgb(0, 0, 0, .16);
+  box-shadow:         inset 0 0 25px  rgb(0, 0, 0, .16);
+}
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input:focus{
+  color:rgb(0, 0, 0, .6)
+}
+
+
+/*this style for the calendar icon's div*/
+.css-1laqsz7-MuiInputAdornment-root{
+  padding-right: 1rem;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-width: 0;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color:rgb(0, 0, 0, .6);
+}
+
+/*this style for fix the helper message on the add new task dialog*/
+.css-1wc848c-MuiFormHelperText-root{
+  margin-right: 0;
+}
+
