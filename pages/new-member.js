@@ -20,7 +20,6 @@ const md = 1024;
             <div className="scroll">
               <h1 className='title2'> My Dashboard </h1>
               <HeroBanner />
-              <ProjectCard1 />
             </div>
       </div>
       </Layout>
